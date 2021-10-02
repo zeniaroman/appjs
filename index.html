@@ -8,8 +8,10 @@
 </head>
 <body>
     <script>
-        fetch('https://ut6glq50ql.execute-api.us-east-2.amazonaws.com/shop-api').then(res => {
-            console.log(res)
+        fetch('https://ut6glq50ql.execute-api.us-east-2.amazonaws.com/shop-api')
+        .then(res => res.json())
+        .then(body => {
+            console.log(body)
         })
     </script>
 </body>
